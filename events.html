@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events Demo</title>
+</head>
+
+<body onload="pageLoaded()">
+
+    <h2 id="output">Event output will appear here</h2>
+
+    <!-- Mouse Events -->
+    <button onclick="clickEvent()">On Click</button>
+    <button onmouseover="mouseOverEvent()">On Mouse Over</button>
+    <button onmouseout="mouseOutEvent()">On Mouse Out</button>
+    <button onmousedown="mouseDownEvent()">On Mouse Down</button>
+    <button onmouseup="mouseUpEvent()">On Mouse Up</button>
+    <button onmousemove="mouseMoveEvent()">On Mouse Move</button>
+
+    <br><br>
+
+    <!-- Keyboard Events -->
+    <input type="text"
+        onkeydown="keyDownEvent(event)"
+        onkeyup="keyUpEvent(event)"
+        placeholder="Type here">
+
+    <br><br>
+
+    <!-- Focus / Blur -->
+    <input type="text"
+        onfocus="focusEvent()"
+        onblur="blurEvent()"
+        placeholder="Focus / Blur">
+
+    <br><br>
+
+    <!-- Change Event -->
+    <select onchange="changeEvent()">
+        <option>Choose</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+    </select>
+
+    <br><br>
+
+    <!-- Submit Event -->
+    <form onsubmit="submitEvent(event)">
+        <input type="text" placeholder="Submit test">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="event .js"></script>
+
+</body>
+</html>
