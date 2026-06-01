@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section {
+  background:
+    linear-gradient(90deg, rgba(6, 18, 35, 0.92), rgba(6, 18, 35, 0.58)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80')
+      center/cover;
+}
+
+.product-card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.16) !important;
+  transform: translateY(-4px);
+}
+
+.product-image {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.modal-backdrop-custom {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.modal-product-image {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+}
